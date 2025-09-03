@@ -1,0 +1,700 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Bodoni Moda", serif;
+    color: #B07D6A;
+    letter-spacing: 2px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #B07D6A;
+}
+
+h1 {
+    width: 100px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #B07D6A;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+}
+
+#concept , #about , #menu , #voice , #access {
+    padding: 100px;
+}
+
+/* header */
+    .hamburger {
+        display: none;
+    }
+    
+    #mask {
+        display: none;
+    }
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+
+header {
+    /* position: absolute; */
+    /* top: 0; */
+    background-color: #F3E0D6;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+header ul {
+    display: flex;
+    padding-top: 20px;
+}
+
+header ul li {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.header-nav a:hover {
+    opacity: 0.6;
+}
+.mainvisual {
+    background-size: 100%;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+/* concept */
+/* #container {
+    width: 1200px;
+} */
+.concept-text p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.sub-tittle {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.concept-img , .about-img {
+    width: 480px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.concept-text {
+    margin-right: 40px;
+}
+
+.back-shadow {
+    margin-top: 100px;
+}
+#concept img {
+    box-shadow: 40px 40px 8px 10px rgba(251, 246, 244);
+}
+
+/* about */
+#about , #voice , #footer , #lesson {
+    background-color: #F3E0D6;
+}
+
+.back-box {
+    box-shadow: -40px 40px 8px 10px rgba(251, 246, 244);
+
+}
+.about-img {
+    margin-right: 80px;
+}
+
+.about-text {
+    text-align: left;
+}
+
+.about-text img {
+    width: 30px;
+}
+
+.about-text dt {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+dd {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* menu */
+.slide-items {
+    width: 100%;
+    max-width: 60%;
+    margin: auto;
+}
+
+.slide-arrow {
+    bottom: 0;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    opacity: 0.7;
+}
+.prev-arrow {
+    left: -80px;
+}
+
+.next-arrow {
+    right: -80px;
+}
+
+.menu-box {
+    text-align: center;
+    width: 600px;
+}
+
+.menu-box img {
+    margin: 20px 0;
+    border-radius: 50px;
+}
+
+.menu-tittle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.point {
+    margin-top: 20px;
+}
+
+/* voice */
+#voice img {
+    max-width: 80%;
+}
+.voice-wrapper {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: center;
+}
+
+.voice-box {
+    max-width: 250px;
+    text-align: center;
+    box-shadow: rgb(251, 246, 244) 0px 0px 8px 3px;
+    padding: 20px 20px 0 20px;
+
+}
+
+.voice-text {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.voice-name {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* access */
+.df-wrapper {
+    display: flex;
+}
+
+.map {
+    margin-right: 40px;
+}
+
+.access-text dt {
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+footer h1 {
+    margin: auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+footer ul li img {
+    width: 30px;
+    padding-right: 30px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+
+
+/* price.html */
+.margin {
+    margin-top: 200px;
+}
+
+#lesson {
+    padding-block: 40px;
+}
+
+.lesson-img {
+    width: 400px;
+    margin-right: 40px;
+}
+
+.lesson-text {
+    text-align: left;
+}
+
+.lesson-tittle , .join-tittle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lesson-price {
+    font-size: 24px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.lesson-price::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: #B07D6A;
+    bottom: -10px;
+    left: 0;
+}
+
+.lesson-goods {
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+}
+
+.lesson-btn {
+    margin: 30px 30px 0 0px;
+}
+
+.lesson-btn a {
+    display: inline-block;
+    padding: 15px 40px;
+    transition: 0.3s;
+}
+
+.lesson-btn {
+  background-color: #B07D6A;
+  color: #fff;
+  padding: 10px 30px;
+  outline: 1px solid;
+  outline-color: #B07D6A;
+  outline-offset: 0px;
+  display: inline-block;
+  transition: .3s;
+}
+.lesson-btn:hover {
+  color: #fff;
+  animation: light .8s infinite;
+}
+
+@keyframes light {
+  100% { 
+    outline-color: transparent;
+    outline-offset: 10px;
+  }
+}
+
+.join {
+    border: 1px solid  #B07D6A;
+    border-radius: 30px;
+    padding: 20px;
+    margin-block: 100px;
+}
+
+.join-tittle , .join-price{
+    font-size: 24px;
+}
+
+.join-price {
+    margin-bottom: 20px;
+}
+
+.menu-price {
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.menu-price::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    margin: 0 auto;
+    background: #B07D6A;
+    transition: 0.2s;
+}
+
+.tax {
+    text-align: right;
+    margin-top: 100px;
+}
+
+.menu-wrapper {
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    gap: 60px;
+    margin-inline: auto;
+    padding: 40px;
+
+}
+
+.price-box img{
+    width: 100%;
+    /* width: 350px; */
+    border-radius: 50px;
+    margin-block: 20px;
+}
+
+.price-box {
+    margin: 0 auto;
+}
+
+
+/* faq */
+.faq-tittle {
+    font-size: 24px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    height: 50px;
+    line-height: 50px;
+    color: #faf6f4;
+    background-color: #B07D6A;
+    margin-bottom: 10px;
+}
+
+.ac {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ac-parent {
+    height: 50px;
+    line-height: 50px;
+    background-color: #F3E0D6;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    transition: .3s;
+    padding-left: 40px;
+}
+
+.ac-child {
+    padding: 2em 1em;
+    background-color: #faf6f4;
+    padding-left: 40px;
+}
+
+.faq {
+    margin-block: 40px;
+}
+
+/* contact.html */
+.container {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 200px;
+    padding-inline: 2%;
+}
+
+p {
+    text-align: center;
+}
+
+.contact-info dd {
+    height: 45px;
+    border: 1px solid #B07D6A;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact-info dd:last-of-type {
+    height: 300px;
+    border: 1px solid #B07D6A;
+    margin-bottom: 60px;
+}
+#message {
+    height: 280px;
+}
+
+input , textarea {
+    width: 100%;
+}
+
+.contact-info dt {
+    text-align: left;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn input {
+    border: 1px solid #B07D6A;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #B07D6A;
+    border-radius: 6px;
+    transition: all 0.3s;
+    margin-bottom: 100px;
+}
+.btn input:hover {
+    opacity: 0.6;
+}
+
+
+/* レスポンシブ */
+@media (max-width:900px) {
+        /* hamburger */
+    header ul {
+        flex-direction: column;
+        }
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 20;
+    }
+
+    .hamburger span {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #B07D6A;
+        border-radius: 2px;
+        left: 0;
+        transition: 0.5s;
+    }
+
+    .hamburger span:nth-child(1) {
+        top:4px;
+    }
+
+    .hamburger span:nth-child(2) {
+        top:14px;
+    }
+
+    .hamburger span:nth-child(3) {
+        bottom: 4px;
+    }
+
+    .open .hamburger span {
+        background-color: #B07D6A;
+    }
+    .open .hamburger span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    .open .hamburger span:nth-child(2) {
+        display: none;
+    }
+
+    .open .hamburger span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    #nav {
+        width: 300px;
+        background-color: #F3E0D6;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        transition: 0.5s;
+        z-index: 20;
+        padding: 20px;
+        left: -300px;
+        opacity: 0;
+    }
+
+    .open #nav {
+        left: 0;
+        opacity: 1;
+    }
+
+
+
+    
+    h1 {
+        width: 80px;
+        margin-top: 10px;
+    }
+
+    #concept , #about , #menu , #voice , #access {
+    padding: 40px;
+}
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    #concept img , .back-box {
+        box-shadow: none;
+    }
+
+    .concept-text {
+        margin-bottom: 40px;
+    }
+
+    .about-img {
+    margin-bottom: 40px;
+}
+
+.voice-wrapper {
+    max-width: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+}
+
+/* access */
+.map {
+    margin-bottom: 40px;
+}
+
+/* price.html */
+.margin {
+    margin-top: 100px;
+}
+
+#lesson {
+    flex-direction: column;
+}
+
+.lesson-img {
+    width: 100%;
+}
+
+.lesson-text {
+    margin-top: 20px;
+}
+
+#lesson ul {
+    /* margin-left: 100px; */
+    margin-left: 20%;
+}
+
+.lessonbtn {
+    text-align: center;
+}
+
+.menu-wrapper {
+    max-width: 450px;
+    display: grid;
+    grid-template-columns: repeat( 1 , 1fr);
+}
+
+.price-box img{
+    margin-block: none;
+}
+
+.lesson-price::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* faq */
+.faq-tittle {
+    max-width: 90%;
+    height: 50px;
+}
+
+/* contact.html */
+.container {
+    margin-top: 100px;
+}
+
+.contact-info dd {
+    height: 100%;
+}
+
+.contact-info dd:last-of-type {
+    height: 200px;
+}
+#message {
+    height: 100%;
+}
+
+
+}
