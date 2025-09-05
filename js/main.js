@@ -71,8 +71,8 @@ $(function () {
     arrows: true, // 矢印
     dots: true, // インジケーター
     adaptiveHeight: true,
-    prevArrow: '<img src="../img/arrow-left.png" class="slide-arrow prev-arrow">',
-    nextArrow: '<img src="../img/arrow-right.png" class="slide-arrow next-arrow">',
+    prevArrow: '<img src="img/arrow-left.png" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="img/arrow-right.png" class="slide-arrow next-arrow">',
 
   });
 });
