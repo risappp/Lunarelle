@@ -71,18 +71,18 @@ header {
     /* top: 0; */
     background-color: #F3E0D6;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-inline: 20px;
 }
 
 header ul {
     display: flex;
-    padding-top: 20px;
 }
 
 header ul li {
     font-size: 18px;
-    padding: 10px;
+    padding-left: 20px;
 }
 
 .header-nav a:hover {
@@ -271,8 +271,8 @@ footer ul {
     justify-content: center;
 }
 footer ul li img {
-    width: 30px;
-    padding-right: 30px;
+    width: 60px;
+    padding: 10px;
 }
 
 .copyright {
@@ -328,7 +328,7 @@ footer ul li img {
 }
 
 .lesson-btn {
-    margin: 30px 30px 0 0px;
+    margin: 30px 0px 30px 0px;
 }
 
 .lesson-btn a {
@@ -396,6 +396,7 @@ footer ul li img {
 .tax {
     text-align: right;
     margin-top: 100px;
+    padding-right: 20px;
 }
 
 .menu-wrapper {
@@ -518,10 +519,18 @@ input , textarea {
 
 /* レスポンシブ */
 @media (max-width:900px) {
+    h2 {
+    font-size: 36px;
+}
+
         /* hamburger */
     header ul {
         flex-direction: column;
         }
+
+    header ul li {
+        padding-top: 20px;
+    }
     .hamburger {
         display: block;
         width: 30px;
@@ -530,7 +539,6 @@ input , textarea {
         transition: 0.5s;
         cursor: pointer;
         position: fixed;
-        top: 15px;
         right: 15px;
         z-index: 20;
     }
@@ -609,6 +617,14 @@ input , textarea {
         flex-direction: column;
     }
 
+.concept-text {
+    margin-right: 0;
+}
+
+    .concept-img , .about-img {
+    width: 100%;
+}
+
     #concept img , .back-box {
         box-shadow: none;
     }
@@ -628,8 +644,12 @@ input , textarea {
 }
 
 /* access */
+iframe {
+    width: 100%;
+}
 .map {
     margin-bottom: 40px;
+    margin-right: 0;
 }
 
 /* price.html */
@@ -694,6 +714,11 @@ input , textarea {
 }
 #message {
     height: 100%;
+}
+
+footer ul li img {
+    width: 40px;
+    padding: 10px;
 }
 
 
