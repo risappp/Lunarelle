@@ -90,6 +90,13 @@ header ul li {
 }
 .mainvisual {
     background-size: 100%;
+    height: calc( 100vh-80px);
+}
+
+.background-mv {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .fadein {
@@ -134,6 +141,7 @@ h3 {
 .back-shadow {
     margin-top: 100px;
 }
+
 #concept img {
     box-shadow: 40px 40px 8px 10px rgba(251, 246, 244);
 }
@@ -441,13 +449,13 @@ footer ul li img {
 }
 
 .ac-parent {
-    height: 50px;
+    min-height: 50px;
     line-height: 50px;
     background-color: #F3E0D6;
     border-bottom: 1px solid #fff;
     cursor: pointer;
-    transition: .3s;
-    padding-left: 40px;
+    transition: 0.3s;
+    padding: 10px 40px;
 }
 
 .ac-child {
@@ -519,10 +527,6 @@ input , textarea {
 
 /* レスポンシブ */
 @media (max-width:900px) {
-    h2 {
-    font-size: 36px;
-}
-
         /* hamburger */
     header ul {
         flex-direction: column;
@@ -601,21 +605,43 @@ input , textarea {
         opacity: 1;
     }
 
-
-
+body {
+    font-size: 14px;
+}
     
     h1 {
         width: 80px;
         margin-top: 10px;
     }
 
-    #concept , #about , #menu , #voice , #access {
-    padding: 40px;
+    h2 {
+    font-size: 32px;
 }
+
+    h3 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 14px;
+}
+
+    .sub-tittle {
+        margin: 30px;
+    }
+
+    #concept , #about , #menu , #voice ,  #access {
+    padding: 20px;
+    }
 
     .wrapper {
         flex-direction: column;
     }
+
+    .back-shadow {
+    margin-top: 0;
+}
 
 .concept-text {
     margin-right: 0;
@@ -637,10 +663,26 @@ input , textarea {
     margin-bottom: 40px;
 }
 
+.slide-arrow {
+    opacity: 0;
+}
+
+.menu-tittle {
+    font-size: 16px;
+}
+
 .voice-wrapper {
     max-width: 500px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-inline: auto;
+}
+
+.voice-box {
+    max-width: 100%;
+}
+
+#voice img {
+    max-width: 40%;
 }
 
 /* access */
@@ -700,6 +742,9 @@ iframe {
     height: 50px;
 }
 
+.ac-parent {
+    line-height: 20px;
+}
 /* contact.html */
 .container {
     margin-top: 100px;
