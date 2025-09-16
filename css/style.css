@@ -605,6 +605,7 @@ input , textarea {
         opacity: 1;
     }
 
+
 body {
     font-size: 14px;
 }
@@ -765,6 +766,10 @@ footer ul li img {
     width: 40px;
     padding: 10px;
 }
+}
 
-
+@media (max-width: 500px) {
+        .background-mv {
+        object-position: -250px center;
+    }
 }
